@@ -1,0 +1,13 @@
+pipeline{
+    agent any
+        stages{
+            stage("Git checkout")
+            {
+                steps{
+                    
+                    git 'https://github.com/pammkum1/myweb.git'
+                }
+            }
+        }
+    
+}
